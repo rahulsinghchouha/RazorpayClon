@@ -2,9 +2,13 @@
   "name": "tailwind_demo",
   "version": "1.0.0",
   "description": "Tailwind",
+  "homepage": "https://rahulsinghchouha.github.io/razorpaydeploy",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "yarn run build",
+    "build":"yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +18,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.25",
     "tailwindcss": "^3.3.2"
   }
